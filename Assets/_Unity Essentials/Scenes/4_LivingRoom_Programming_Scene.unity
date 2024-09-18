@@ -932,6 +932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotationSpeed: 200
+  jumpForce: 5
 --- !u!4 &834225572 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3929091698083224559, guid: b1b1d5422f9604f19b5b88a945ebb435,
@@ -1557,6 +1558,24 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 267472998}
   m_SourcePrefab: {fileID: 100100000, guid: 0188d362571e34eb3a9af2feb73521cf, type: 3}
+--- !u!1 &1683552180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1554601738652106576, guid: 625a16b402cfd487494f48992994e27e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4384326241555691564}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1683552185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683552180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 657ab9456e23de14a8561e46fd2556be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1783572213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,6 +1646,7 @@ GameObject:
   - component: {fileID: 1815318737}
   - component: {fileID: 1815318736}
   - component: {fileID: 1815318738}
+  - component: {fileID: 1815318739}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -1734,6 +1754,19 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!114 &1815318739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815318735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d681bfde52a72b449c30d4ac3658e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dayDuration: 5
 --- !u!1 &1894064495 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3720867298404714495, guid: 0188d362571e34eb3a9af2feb73521cf,
@@ -2134,6 +2167,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChairDiningB (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2542947572197010399, guid: 625a16b402cfd487494f48992994e27e,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.60642195
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542947572197010399, guid: 625a16b402cfd487494f48992994e27e,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.30321085
+      objectReference: {fileID: 0}
+    - target: {fileID: 2542947572197010399, guid: 625a16b402cfd487494f48992994e27e,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2676122342366354931, guid: 625a16b402cfd487494f48992994e27e,
         type: 3}
       propertyPath: m_IsActive
@@ -2229,6 +2277,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1440623005}
+    - targetCorrespondingSourceObject: {fileID: 1554601738652106576, guid: 625a16b402cfd487494f48992994e27e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1683552185}
     - targetCorrespondingSourceObject: {fileID: 2832342470797062690, guid: 625a16b402cfd487494f48992994e27e,
         type: 3}
       insertIndex: -1
